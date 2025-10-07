@@ -1,0 +1,79 @@
+body {
+    font-family: "Courier New", monospace;
+    background: url("https://swansdown.com/wp-content/uploads/2021/07/Cupcakes_Quick-Preset_1020x500.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, main {
+    background: rgba(20,20,20,0.85);
+    margin: 2% auto;
+    max-width: 950px;
+    padding: 2em;
+    border: 2px solid #40d9ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,204,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #40d9ff;
+    border-left: 6px solid #40d9ff;
+    padding-left: 0.6em;
+    margin-top: 1.5em;
+}
+
+h3 {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5em;
+    border-left: 4px solid #40d9ff;
+    margin-top: 1em;
+}
+
+p {
+    line-height: 1.7;
+    margin: 0.5em 0 1em 0;
+}
+
+ul {
+    background: rgba(255,255,255,0.1);
+    padding: 1em 2em;
+    border-radius: 8px;
+    border: 1px solid #40d9ff;
+}
+
+ul li {
+    margin: 0.5em 0;
+    list-style-type: circle;
+}
+
+footer {
+    text-align: center;
+    background: rgba(66, 195, 255, 0.9);
+    color: #111;
+    font-weight: bold;
+}
+
+@media (min-width: 401px) {
+    header h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.5em; }
+}
+
+@media (max-width: 400px) {
+    header h1 { font-size: 1.1em; }
+    h2 { font-size: 1em; }
+    h3 { font-size: 0.9em; }
+    p { font-size: 0.7em; }
+}
+
