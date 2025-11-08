@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            color: white;
+            background-color:rgb(255, 139, 195);
+        }
+
+        #buttons {
+            margin-bottom: 8px;
+            display:flex;
+            gap: 10px;
+        }
+
+        #map {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #ffffff;
+            display: inline-block
+        }
+
+        #sidebar {
+            display: inline-block;
+            vertical-align: baseline;
+            margin-left: 12px
+        }
+
+        #puzzle-blocks {
+            margin-bottom: 8px;
+            display:flex;
+            gap: 10px;
+        }
+
+        #puzzle-desk,
+        #puzzle-board {
+            width: 620px;
+            height: 420px;
+            border: 1px solid #ffffff;
+            margin-top: 12px;
+            position: relative
+        }
+
+        .piece {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            cursor: grab
+        }
+
+        #puzzle-board .slot {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px dashed #ffffff;
+            box-sizing: border-box
+        }
+
+        button {
+            display:block;
+            margin: 6px 0
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Puzzle</h1>
+    <div id="buttons">
+        <button id="button-localization">Moja lokalizacja</button>
+        <button id="button-notification-perm">Wyświetlaj powiadomienia</button>
+        <button id="button-download">Pobierz mapę</button>
+    </div>
+    </div>
+
+
+    <div id="map"></div>
+    <div id="sidebar">
+        <div id="puzzle-blocks">
+            <div id="puzzle-board"></div>
+            <div id="puzzle-desk"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
